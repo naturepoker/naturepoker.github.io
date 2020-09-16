@@ -1,0 +1,1103 @@
+/*! HTML5 Boilerplate v7.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #000;
+}
+
+@font-face {
+    font-family: "garamond";
+    src: url("../font/EBGaramond08-Regular.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "garamondital";
+    src: url("../font/EBGaramond08-Italic.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'garamond', serif;
+    -webkit-hyphens: manual;
+
+    -moz-hyphens: manual;
+
+    -ms-hyphens: manual;
+
+    -o-hyphens: manual;
+
+    hyphens: manual;
+
+
+}
+
+body {
+    background: #000;
+}
+
+a {
+    font-family: 'garamond', serif;
+    color: #222;
+    text-decoration: none;
+    transition: all .5s ease-in;
+}
+
+a:hover {
+    font-family: 'garamondital', serif;
+    transition: all .5s ease-out;
+}
+
+h2,
+h4 {
+    margin: 0;
+    font-weight: normal;
+}
+
+p {
+    margin: 0;
+    letter-spacing: -.2px;
+}
+
+#homebody {
+    background: #000;
+}
+
+.homevideo {
+    height: 85vh;
+    position: fixed;
+    z-index: -1;
+    background: #000;
+    top: 5%;
+}
+
+.home ul {
+    height: 100vh;
+    margin: 0;
+}
+
+.home ul li {
+    font-size: 78px;
+    line-height: 122px;
+    margin: 0;
+    margin-bottom: -35px;
+    color: #fff;
+    list-style-type: none;
+    z-index: 100;
+}
+
+.home ul li a {
+    color: #fff;
+}
+
+.homeback {
+    width: 100%;
+    height: 100%;
+    color: #000;
+}
+
+.animation {
+    width: 50vw;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: #000;
+}
+
+.animation video {
+    height: 100vh;
+    left: 0;
+}
+
+.animation img {
+    height: 106vh;
+    z-index: 500 !important;
+}
+
+.book {
+    width: 44vw;
+    margin-left: 50vw;
+    padding-bottom: 100px;
+}
+
+.book .top {
+    margin-top: 250px;
+}
+
+.book h2 {
+    font-size: 90px;
+    width: 50vw;
+    position: fixed;
+    top: 105px;
+    left: 50vw;
+    transition: all .3s ease-out;
+    z-index: 100;
+}
+
+.book h2 #do {
+    position: relative;
+    left: 44%;
+    margin-left: -111.5px;
+}
+
+.book h2 #na {
+    position: relative;
+    left: 44%;
+    margin-left: -180px;
+}
+
+.book h2 #ju {
+    position: relative;
+    left: 44%;
+    margin-left: -144.4px;
+}
+
+.book h2 #no {
+    position: relative;
+    left: 44%;
+    margin-left: -160px;
+}
+
+.book h2 #ma {
+    position: relative;
+    left: 44%;
+    margin-left: -153px;
+}
+
+.book h2 #ro {
+    position: relative;
+    left: 47.5%;
+    margin-left: -188.5px;
+}
+
+.book h2 #ch {
+    position: relative;
+    left: 44%;
+    margin-left: -189.5px;
+}
+
+.book h2 #ap {
+    position: relative;
+    left: 44%;
+    margin-left: -184px;
+}
+
+.go {
+    transform: translate(0, -120px);
+    transition: all .3s ease-in;
+}
+
+.book p {
+    width: 40vw;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: -.4px;
+    padding-left: 4vw;
+    padding-bottom: 25px;
+}
+
+.book .legend {
+    padding-top: 22px;
+}
+
+.book .legendnom {
+    font-size: 14px;
+    padding-top: 30px;
+    text-align: left;
+    margin-left: 4vw;
+}
+
+.italy {
+    font-family: 'garamondital', serif;
+}
+
+.navigation {
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    width: 5vw;
+    margin-left: 95vw;
+    z-index: 120;
+}
+
+.navigation ul {
+    height: 100vh;
+    position: absolute;
+    right: -20px;
+}
+
+.navigation ul li {
+    list-style-type: none;
+    transform: rotate(-90deg);
+    margin-bottom: 30px;
+    font-size: 14px;
+    width: 70px;
+    height: 60px;
+    position: relative;
+}
+
+.navigation ul .studies {
+    margin-bottom: 24px;
+}
+
+.navigation ul .works {
+    margin-bottom: 10px;
+}
+
+.navigation ul .colleagues {
+    margin-bottom: 16px;
+}
+
+.navigation ul .infos2 {
+    transform: rotate(0);
+    width: 70px;
+    height: 60px;
+    bottom: 0;
+}
+
+.navigation ul .infos2 img {
+    width: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.colleaguesPage {
+    background: #E0DDBF;
+}
+
+.colleaguesPage h2 {
+    background: #E0DDBF;
+}
+
+.toolsPage {
+    background: #FFE6CC;
+}
+
+.toolsPage h2 {
+    background: #FFE6CC;
+}
+
+.labnotesPage {
+    background: #D2E0F2;
+}
+
+.labnotesPage h2 {
+    background: #D2E0F2;
+}
+
+.worksPage {
+    background: #FFE7E7;
+}
+
+.worksPage h2 {
+    background: #FFE7E7;
+}
+
+.studiesPage {
+    background: #FFE6CC;
+}
+
+.studiesPage h2 {
+    background: #FFE6CC;
+}
+
+.introductionPage {
+    background: #FFE6CC;
+}
+
+.introductionPage h2 {
+    background: #FFE6CC;
+}
+
+.bibliographyPage {
+    background: #F2E5F2;
+}
+
+.bibliographyPage h2 {
+    background: #F2E5F2;
+}
+
+.info {
+    background: #000;
+    color: #fff;
+}
+
+.info h2 {
+    background: #000;
+    left: 50vw;
+}
+
+.info .navigation a {
+    color: #fff;
+}
+
+.book .legend {
+    font-size: 14px;
+    text-align: center;
+}
+
+.info a {
+    color: #fff;
+}
+
+.backtothetop {
+    margin-top: 50px;
+}
+
+.backtothetop a {
+    font-size: 14px;
+}
+
+/*=========================================================================
+
+Media queries
+
+=========================================================================*/
+
+/* ----------- big screens ----------- */
+@media screen and (min-width: 1400px) {
+    .home ul li {
+        font-size: 95px;
+        line-height: 138px;
+    }
+}
+
+/* ----------- iPad Pro 12.9" ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    #barba-wrapper {
+        overflow-x: hidden;
+        overflow-y: scroll !important;
+    }
+
+    .home ul li {
+        font-size: 120px !important;
+        line-height: 162px !important;
+    }
+
+    .home ul li:last-child {
+        line-height: 130px;
+        padding-top: 10px;
+    }
+
+    .animation {
+        width: 93vw;
+        top: 0;
+        left: 0;
+        position: absolute !important;
+        background: #000;
+    }
+
+    .book {
+        width: 80vw;
+        margin-left: 5vw;
+        margin-top: 100vh;
+        padding-right: 5vw;
+    }
+
+    .book h2 {
+        width: 85vw;
+        position: relative;
+        top: 155px;
+        left: 0;
+    }
+
+    .go {
+        transform: translate(0, 0);
+        transition: all .3s ease-in;
+    }
+
+    .navigation ul {
+        margin-top: 0;
+        padding-left: 20px;
+    }
+
+    .introductionPage .navigation ul {
+        background: #FFE6CC;
+    }
+
+    .introductionPage .introduction a {
+        font-family: "garamondital";
+    }
+
+    .bibliographyPage .navigation ul {
+        background: #F2E5F2;
+    }
+
+    .bibliographyPage .bibliography a {
+        font-family: "garamondital";
+    }
+
+    .worksPage .navigation ul {
+        background: #FFE7E7;
+    }
+
+    .worksPage .works a {
+        font-family: "garamondital";
+    }
+
+    .studiesPage .navigation ul {
+        background: #FFE6CC;
+    }
+
+    .studiesPage .studies a {
+        font-family: "garamondital";
+    }
+
+    .colleaguesPage .navigation ul {
+        background: #E0DDBF;
+    }
+
+    .colleaguesPage .colleagues a {
+        font-family: "garamondital";
+    }
+
+    .toolsPage .navigation ul {
+        background: #FFE6CC;
+    }
+
+    .toolsPage .tools a {
+        font-family: "garamondital";
+    }
+
+    .labnotes .navigation ul {
+        background: #D2E0F2;
+    }
+
+    .labnotesPage .labnotes a {
+        font-family: "garamondital";
+    }
+}
+
+/* ipad */
+@media only screen and (min-device-width: 767px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    #barba-wrapper {
+        overflow-x: hidden;
+        overflow-y: scroll !important;
+    }
+
+    .home ul li {
+        font-size: 90px;
+        line-height: 140px;
+    }
+
+    .home ul li:last-child {
+        line-height: 100px;
+        padding-top: 18px;
+    }
+
+    .animation {
+        width: 93vw;
+        top: 0;
+        left: 0;
+        position: absolute !important;
+        background: #000;
+    }
+
+    .book {
+        width: 83vw;
+        margin-left: 5vw;
+        margin-top: 100vh;
+        padding-right: 5vw;
+    }
+
+    .book p {
+        width: 100%;
+    }
+
+    .book h2 {
+        width: 85vw;
+        position: relative;
+        top: 155px;
+        left: 0;
+    }
+
+    .book h2 #do {
+        left: 48%;
+    }
+
+    .book h2 #na {
+        left: 48%;
+    }
+
+    .book h2 #ju {
+        left: 48%;
+    }
+
+    .book h2 #no {
+        left: 48%;
+    }
+
+    .book h2 #ma {
+        left: 48%;
+    }
+
+    .book h2 #ro {
+        left: 50%;
+    }
+
+    .book h2 #ch {
+        left: 48%;
+    }
+
+    .book h2 #ap {
+        left: 48%;
+    }
+
+
+    .go {
+        transform: translate(0, 0);
+        transition: all .3s ease-in;
+    }
+
+    .navigation ul {
+        margin-top: 0;
+        padding-left: 20px;
+    }
+
+    .introductionPage .navigation ul {
+        background: #FFE6CC;
+    }
+
+    .introductionPage .introduction a {
+        font-family: "garamondital";
+    }
+
+    .bibliographyPage .navigation ul {
+        background: #F2E5F2;
+    }
+
+    .bibliographyPage .bibliography a {
+        font-family: "garamondital";
+    }
+
+    .worksPage .navigation ul {
+        background: #FFE7E7;
+    }
+
+    .worksPage .works a {
+        font-family: "garamondital";
+    }
+
+    .studiesPage .navigation ul {
+        background: #FFE6CC;
+    }
+
+    .studiesPage .studies a {
+        font-family: "garamondital";
+    }
+
+    .colleaguesPage .navigation ul {
+        background: #E0DDBF;
+    }
+
+    .colleaguesPage .colleagues a {
+        font-family: "garamondital";
+    }
+
+    .toolsPage .navigation ul {
+        background: #FFE6CC;
+    }
+
+    .toolsPage .tools a {
+        font-family: "garamondital";
+    }
+
+    .labnotesPage .navigation ul {
+        background: #D2E0F2;
+    }
+
+    .labnotesPage .labnotes a {
+        font-family: "garamondital";
+    }
+
+
+
+}
+
+/* smartphones */
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    #barba-wrapper {
+        overflow-x: hidden;
+        overflow-y: scroll !important;
+        height:100%;
+    }
+
+    .animation img {
+        width: 100vw;
+        z-index: 500 !important;
+    }
+
+    #info .animation img {
+        width: 100vw;
+        margin-left: 30px;
+    }
+
+    #homebody #barba-wrapper {
+        height: 100vh;
+    }
+    
+    .home ul{
+        padding-left:30px;
+    }
+
+    .home ul li {
+        font-size: 42px;
+        line-height: 88px;
+    }
+
+    .home ul li:last-child {
+        line-height: 52px;
+        padding-top: 18px;
+    }
+
+    .navigation ul li {
+        font-size: 12px;
+        height: 40px;
+    }
+
+    .navigation ul .infos2 img {
+        bottom: -40px;
+        top: 6px;
+        left: 8px;
+    }
+
+    .animation {
+        width: 125vw;
+        top: 0px;
+        left: -80px;
+        position: relative;
+        background: #000;
+    }
+
+    .book {
+        width: 78vw;
+        margin-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .book h2 {
+        font-size: 50px;
+        width: 100vw;
+        position: relative;
+        top: 50px;
+        left: 0;
+    }
+
+    .book .top {
+        margin-top: 100px;
+    }
+
+    .book p {
+        width: 100%;
+        font-size: 22px;
+        line-height: 30px;
+        padding-left:0;
+    }
+
+    .go {
+        transform: translate(0, 0);
+        transition: all .3s ease-in;
+    }
+
+    .navigation ul {
+        margin-top: 0;
+        padding-left: 5px;
+    }
+
+    .introductionPage .navigation ul {
+        background: #FFE6CC;
+    }
+
+    .introductionPage .introduction a {
+        font-family: "garamondital";
+    }
+
+    .bibliographyPage .navigation ul {
+        background: #F2E5F2;
+    }
+
+    .bibliographyPage .bibliography a {
+        font-family: "garamondital";
+    }
+
+    .worksPage .navigation ul {
+        background: #FFE7E7;
+    }
+
+    .worksPage .works a {
+        font-family: "garamondital";
+    }
+
+    .studiesPage .navigation ul {
+        background: #FFE6CC;
+    }
+
+    .studiesPage .studies a {
+        font-family: "garamondital";
+    }
+
+    .colleaguesPage .navigation ul {
+        background: #E0DDBF;
+    }
+
+    .colleaguesPage .colleagues a {
+        font-family: "garamondital";
+    }
+
+    .toolsPage .navigation ul {
+        background: #FFE6CC;
+    }
+
+    .toolsPage .tools a {
+        font-family: "garamondital";
+    }
+
+    .labnotesPage .navigation ul {
+        background: #D2E0F2;
+    }
+
+    .labnotesPage .labnotes a {
+        font-family: "garamondital";
+    }
+
+    .book h2 #do {
+        position: relative;
+        left: 38.5%;
+        margin-left: -62px;
+    }
+
+    .book h2 #na {
+        position: relative;
+        left: 38.5%;
+        margin-left: -106.5px;
+    }
+
+    .book h2 #ju {
+        position: relative;
+        left: 38.5%;
+        margin-left: -80px;
+    }
+
+    .book h2 #no {
+        position: relative;
+        left: 38.5%;
+        margin-left: -88.5px;
+    }
+
+    .book h2 #ma {
+        position: relative;
+        left: 38.5%;
+        margin-left: -85px;
+    }
+
+    .book h2 #ro {
+        position: relative;
+        left: 38.5%;
+        margin-left: -103.5px;
+    }
+
+    .book h2 #ch {
+        position: relative;
+        left: 38.5%;
+        margin-left: -105px;
+    }
+
+    .book h2 #ap {
+        position: relative;
+        left: 38.5%;
+        margin-left: -102px;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
+}
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " ("attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " ("attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
